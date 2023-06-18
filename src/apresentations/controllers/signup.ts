@@ -4,7 +4,7 @@ import { HttpRequest, HttpResponse } from '../protocols/http'
 
 export class SingUpController {
   handle (httpRequest: HttpRequest): HttpResponse {
-    const requiredFilds = ['name', 'email', 'password']
+    const requiredFilds = ['name', 'email', 'password', 'passwordConfirmation']
 
     for (const field of requiredFilds) {
       if (!httpRequest.body[field]) {
