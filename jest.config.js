@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['<rooDir>/src/**/*.ts'],
   coverageDirectory: 'coverage',
